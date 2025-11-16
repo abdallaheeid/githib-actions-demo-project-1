@@ -1,0 +1,10 @@
+name: Test Project
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Code
+        run: npm install
+      - name: Test Code
+        run: npm test
